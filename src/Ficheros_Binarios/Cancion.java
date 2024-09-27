@@ -56,12 +56,12 @@ public class Cancion implements Serializable {
     //Metodo que muestre la cancion
     @Override
     public String toString() {
-        return "Canción ID: " + id + "\n" +
-                "Año: " + año + "\n" +
-                "Título: " + titulo + "\n" +
-                "Artista: " + artista + "\n" +
-                "Duración: " + duracion + "\n" +
-                "Es española: " + (española ? "Sí" : "No");
+        return "- Canción ID: " + id + "\n" +
+                "     Año: " + año + "\n" +
+                "     Título: " + titulo + "\n" +
+                "     Artista: " + artista + "\n" +
+                "     Duración: " + duracion + "\n" +
+                "     Es española: " + (española ? "Sí" : "No");
     }//Fin toString
 
 
