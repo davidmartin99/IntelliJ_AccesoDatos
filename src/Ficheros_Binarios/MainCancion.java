@@ -13,7 +13,7 @@ public class MainCancion {
     public static void main(String[] args) throws IOException {
         //Creamos un fichero para guardar las canciones
         Scanner sc = new Scanner(System.in);
-        String fichero = "C:\\Users\\aludam2\\IdeaProjects\\Acceso_Datos\\src\\Ficheros_Binarios\\canciones1.dat"; // Nombre del archivo donde se guardarán las canciones
+        String fichero = "C://Users//aludam2//IdeaProjects//Acceso_Datos//src//Ficheros_Binarios//canciones4.dat"; // Nombre del archivo donde se guardarán las canciones
 
         int opcion;
 
@@ -38,9 +38,9 @@ public class MainCancion {
 
                         // Si el archivo existe, usar MiObjectOutputStream
                         if (new File(fichero).exists()) {
-                            objectOS = new ObjectOutputStream(fileout);
-                        } else {
                             objectOS = new MiObjectOutputStream(fileout);
+                        } else {
+                            objectOS = new ObjectOutputStream(fileout);
                         }
 
                         System.out.println("Introduce los datos de la canción:");
