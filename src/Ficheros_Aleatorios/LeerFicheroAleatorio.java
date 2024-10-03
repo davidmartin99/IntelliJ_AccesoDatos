@@ -1,45 +1,59 @@
 package Ficheros_Aleatorios;
 
 import java.io.*;
+
+/*
+    Clase que visualiza todos los empleados secuencialmente
+ */
 public class LeerFicheroAleatorio {
     public static void main(String[] args) throws IOException {
-        File fichero = new File("src\\Ficheros_Aleatorios\\AleatorioEjemplo.dat");
-        //declara el fichero de acceso aleatorio
+        File fichero = new File("src\\Ficheros_Aleatorios\\AleatorioEjemplo5.dat");
+        // Declara el fichero de acceso aleatorio
         RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
-        int id, dep, posicion;
-        Double salario;
-        char apellido[] = new char[10], aux;
+        int id, dep;
+        double salario;
+        char apellido[] = new char[10];
 
-        posicion = 0; //para situarnos al principio
+        long posicion = 0; // Para situarnos al principio
 
-        for (;;) {
-            //recorro el fichero
-            file.seek(posicion); //nos posicionamos en la posición
-            id = file.readInt(); //obtengo id de empleado
+        while (posicion < file.length()) { // Loop until the end of the file
+            // Recorro el fichero
+            file.seek(posicion); // Nos posicionamos en la posición
 
-            //recorro uno a uno los caracteres del apellido
+            // Check if we can read the ID before actually reading it
+            if (file.getFilePointer() >= file.length()) {
+                break; // If at the end of file, break
+            }
+
+            id = file.readInt(); // Obtengo id de empleado
+
+            // Si el ID es -1, saltamos el registro
+            if (id == -1) {
+                // Saltamos los bytes del registro (apellido, dep, salario)
+                file.skipBytes(24); // 10 chars x 2 bytes + 4 bytes (dep) + 8 bytes (salario)
+                posicion += 36; // Muevo la posición al siguiente registro
+                continue; // Continuamos al siguiente registro
+            }
+
+            // Recorro uno a uno los caracteres del apellido
             for (int i = 0; i < apellido.length; i++) {
-                aux = file.readChar(); //los voy guardando en el array
-                apellido[i] = aux;
+                apellido[i] = file.readChar(); // Los voy guardando en el array
             }
 
-            //convierto a String el array
+            // Convierto a String el array
             String apellidos = new String(apellido);
-            dep = file.readInt(); //obtengo dep
-            salario = file.readDouble(); //obtengo salario
+            dep = file.readInt(); // Obtengo dep
+            salario = file.readDouble(); // Obtengo salario
 
-            if (id > 0) {
-                System.out.printf("ID: %d, Apellido: %s, Departamento: %d, Salario: %.2f\n",
-                        id, apellidos.trim(), dep, salario);
-            }
-            //me posiciono para el siguiente empleado, cada empleado ocupa 36 bytes
-            posicion = posicion + 36;
+            // Muestro la información del empleado
+            System.out.printf("ID: %d, Apellido: %s, Departamento: %d, Salario: %.2f\n",
+                    id, apellidos.trim(), dep, salario);
 
-            //si he recorrido todos los bytes salgo del for
-            if (file.getFilePointer() == file.length()) break;
+            // Me posiciono para el siguiente empleado, cada empleado ocupa 36 bytes
+            posicion += 36; // Increment position for next record
         }
 
-        file.close(); //cerrar fichero
+        file.close(); // Cerrar fichero
     }
 }
