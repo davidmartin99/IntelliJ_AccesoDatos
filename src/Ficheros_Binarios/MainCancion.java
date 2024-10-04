@@ -101,7 +101,7 @@ public class MainCancion {
     }
 
 
-    // Método para buscar canciones por artista
+    // Metodo para buscar canciones por artista
     public static void buscarCancionPorArtista(String fichero, String nombreBuscar) {
         try (FileInputStream fileIn = new FileInputStream(fichero);
              ObjectInputStream objectIS = new ObjectInputStream(fileIn)) {
