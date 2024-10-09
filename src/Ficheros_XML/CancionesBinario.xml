@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Canciones>
+    <Cancion>
+        <ID>45</ID>
+        <Año>1998</Año>
+        <Titulo>Toma</Titulo>
+        <Artista>be</Artista>
+        <Duracion>34</Duracion>
+        <Española>false</Española>
+    </Cancion>
+    <Cancion>
+        <ID>4955</ID>
+        <Año>1992</Año>
+        <Titulo>La vida</Titulo>
+        <Artista>Manuel</Artista>
+        <Duracion>45min</Duracion>
+        <Española>false</Española>
+    </Cancion>
+    <Cancion>
+        <ID>23</ID>
+        <Año>2004</Año>
+        <Titulo>Vorr</Titulo>
+        <Artista>top</Artista>
+        <Duracion>3min</Duracion>
+        <Española>true</Española>
+    </Cancion>
+</Canciones>
