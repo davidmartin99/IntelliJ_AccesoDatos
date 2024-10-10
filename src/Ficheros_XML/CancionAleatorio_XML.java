@@ -69,8 +69,10 @@ public class CancionAleatorio_XML {
                 CrearElemento("Duracion", duracion, raiz, document); // Aquí usamos el String directamente
                 CrearElemento("EsEspañola", española ? "Sí" : "No", raiz, document);
 
+
+                //Cada registro son 229 bytes
                 posicion += 229; // avanzar al siguiente registro
-            }
+            }//Fin while
 
             // Pasar el árbol al fichero XML con Transformer
             Source source = new DOMSource(document);
