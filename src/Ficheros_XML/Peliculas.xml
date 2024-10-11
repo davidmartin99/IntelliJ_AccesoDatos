@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula>
+        <id>1</id>
+        <titulo>Origen</titulo>
+        <año>2010</año>
+        <director>Christopher Nolan</director>
+        <genero>Ciencia Ficción</genero>
+        <duracion>148</duracion>
+        <disponible>true</disponible>
+    </pelicula>
+    <pelicula>
+        <id>2</id>
+        <titulo>Interestelar</titulo>
+        <año>2014</año>
+        <director>Christopher Nolan</director>
+        <genero>Aventura</genero>
+        <duracion>169</duracion>
+        <disponible>true</disponible>
+    </pelicula>
+    <pelicula>
+        <id>3</id>
+        <titulo>Parásitos</titulo>
+        <año>2019</año>
+        <director>Bong Joon-ho</director>
+        <genero>Thriller</genero>
+        <duracion>132</duracion>
+        <disponible>false</disponible>
+    </pelicula>
+</peliculas>

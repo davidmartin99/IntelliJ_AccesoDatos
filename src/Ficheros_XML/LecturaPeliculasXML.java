@@ -1,15 +1,17 @@
 package Ficheros_XML;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import javax.xml.parsers.*;
-import org.w3c.dom.*;
-
 /*
-    Clase que se encarga de leer un archivo XML de empleados
-    y mostrar la información de cada empleado.
+    Igual que LecturaEmpleadoXML pero con el archivo Peliculas.xml
  */
-public class LecturaEmpleadoXML {
-
+public class LecturaPeliculasXML {
     public static void main(String[] args) {
         // Creamos una instancia de DocumentBuilderFactory para obtener un parser de XML.
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -19,7 +21,7 @@ public class LecturaEmpleadoXML {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             // Parseamos el archivo Empleados.xml, obteniendo el DOM (Document Object Model) del archivo.
-            Document document = builder.parse(new File("src\\Ficheros_XML\\Empleados.xml"));
+            Document document = builder.parse(new File("src\\Ficheros_XML\\Peliculas.xml"));
 
             // Normalizamos el documento para eliminar nodos redundantes y unificar la estructura.
             document.getDocumentElement().normalize();
@@ -28,12 +30,12 @@ public class LecturaEmpleadoXML {
             System.out.printf("Elemento raiz: %s\n", document.getDocumentElement().getNodeName());
 
             // Creamos una lista de nodos que contienen todos los elementos "Empleado" en el archivo XML.
-            NodeList empleados = document.getElementsByTagName("Empleado");
-            System.out.printf("Nodos empleado a recorrer: %d\n", empleados.getLength());
+            NodeList peliculas = document.getElementsByTagName("pelicula");
+            System.out.printf("Nodos empleado a recorrer: %d\n", peliculas.getLength());
 
             // Recorremos la lista de nodos "Empleado".
             // Utilizamos .getLenght() para saber cuantos empleados tenemos
-            for (int i = 0; i < empleados.getLength(); i++) {
+            for (int i = 0; i < peliculas.getLength(); i++) {
 
                 /*
                     !!!!!! Obtenemos el nodo individual de cada empleado.
@@ -41,24 +43,32 @@ public class LecturaEmpleadoXML {
                     Cada nodo contiene toda la información de un empleado
                     (por ejemplo, ID, apellido, departamento, salario).
                  */
-                Node emple = empleados.item(i);
+                Node pelicula = peliculas.item(i);
 
                 // Verificamos que el nodo sea un nodo de tipo ELEMENT_NODE (elemento de XML).
-                if (emple.getNodeType() == Node.ELEMENT_NODE) {
+                if (pelicula.getNodeType() == Node.ELEMENT_NODE) {
                     // Convertimos el nodo en un elemento para poder acceder a sus datos.
-                    Element elemento = (Element) emple;
+                    Element elemento = (Element) pelicula;
 
                     // Imprimimos el valor del nodo "Id" del empleado.
-                    System.out.printf("ID: %s\n", elemento.getElementsByTagName("Id").item(0).getTextContent());
+                    System.out.printf("ID: %s\n", elemento.getElementsByTagName("id").item(0).getTextContent());
 
                     // Imprimimos el valor del nodo "Apellido" del empleado.
-                    System.out.printf("Apellido: %s\n", elemento.getElementsByTagName("Apellido").item(0).getTextContent());
+                    System.out.printf("Titulo: %s\n", elemento.getElementsByTagName("titulo").item(0).getTextContent());
 
                     // Imprimimos el valor del nodo "Departamento" del empleado.
-                    System.out.printf("Departamento: %s\n", elemento.getElementsByTagName("Departamento").item(0).getTextContent());
+                    System.out.printf("Año: %s\n", elemento.getElementsByTagName("año").item(0).getTextContent());
 
                     // Imprimimos el valor del nodo "Salario" del empleado.
-                    System.out.printf("Salario: %s\n", elemento.getElementsByTagName("Salario").item(0).getTextContent());
+                    System.out.printf("Director: %s\n", elemento.getElementsByTagName("director").item(0).getTextContent());
+
+                    System.out.printf("Genero: %s\n", elemento.getElementsByTagName("genero").item(0).getTextContent());
+
+                    System.out.printf("Duracion: %s\n", elemento.getElementsByTagName("duracion").item(0).getTextContent());
+
+                    System.out.printf("Disponible: %s\n", elemento.getElementsByTagName("disponible").item(0).getTextContent());
+
+
                 }//Fin if
 
                 // Separador entre los registros de cada empleado para mayor legibilidad en la salida.
@@ -71,5 +81,4 @@ public class LecturaEmpleadoXML {
         }//Fin try-catch
 
     }//Fin main
-
 }//Fin class
