@@ -1,3 +1,5 @@
+package Ficheros_XML.SerializarObjetos_XML;
+
 import Ficheros_Binarios.Persona;
 import Ficheros_XML.SerializarObjetos_XML.ListaPersonas;
 import com.thoughtworks.xstream.XStream;
