@@ -3,8 +3,8 @@ package Ficheros_Binarios;
 import java.io.Serializable;
 
 public class Persona implements Serializable {
-        private String nombre;
-        private int edad;
+        public String nombre;
+        public int edad;
 
         //Constructores
         public Persona(String nombre, int edad){

@@ -3,12 +3,17 @@ package Ficheros_XML.SerializarObjetos_XML;
 import Ficheros_Binarios.Persona;
 import Ficheros_XML.SerializarObjetos_XML.ListaPersonas;
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.AnyTypePermission;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
 public class LeerPersonasXML {
     public static void main(String[] args) throws IOException {
         XStream xstream = new XStream();
+
+        // Uso esto para dar permisos
+        xstream.addPermission(AnyTypePermission.ANY); // También puedes usar allowTypesByWildcard para clases específicas.
 
         // Set up XStream aliases
         xstream.alias("ListaPersonasMunicipio", ListaPersonas.class);
@@ -23,14 +28,14 @@ public class LeerPersonasXML {
         // Display the number of persons
         System.out.println("Número de Personas: " + listadoTodas.getListaPersonas().size());
 
-        /*
+
         // Iterate and print details
         for (Persona p : listadoTodas.getListaPersonas()) {
             System.out.printf("Nombre: %s, Edad: %d%n", p.getNombre(), p.getEdad());
         }
 
         System.out.println("Fin de listado");
-         */
+
 
     }
 }
