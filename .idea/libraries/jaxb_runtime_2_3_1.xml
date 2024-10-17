@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jaxb-runtime-2.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jaxb-runtime-2.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jakarta.activation-api-2.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jaxb-core-2.3.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jaxb-api-2.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,10 +1,13 @@
-package JABX;
+package JAXB;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serial;
 import java.io.Serializable;
 
-@XmlType(propOrder = {"autor", "nombre", "editorial", "isbn"})
+@XmlType(propOrder = {"nombre", "autor", "editorial", "isbn"})
 public class Libro implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L; // Recommended for Serializable classes
 
     private String nombre;
@@ -12,6 +15,7 @@ public class Libro implements Serializable {
     private String editorial;
     private String isbn;
 
+    // Constructor with parameters
     public Libro(String nombre, String autor, String editorial, String isbn) {
         this.nombre = nombre;
         this.autor = autor;
@@ -19,21 +23,27 @@ public class Libro implements Serializable {
         this.isbn = isbn;
     }
 
+    // Default constructor
     public Libro() {
+        // Empty constructor for JAXB
     }
 
+    @XmlElement(name = "nombre") // Specify XML element name
     public String getNombre() {
         return nombre;
     }
 
+    @XmlElement(name = "autor") // Specify XML element name
     public String getAutor() {
         return autor;
     }
 
+    @XmlElement(name = "editorial") // Specify XML element name
     public String getEditorial() {
         return editorial;
     }
 
+    @XmlElement(name = "isbn") // Specify XML element name
     public String getIsbn() {
         return isbn;
     }

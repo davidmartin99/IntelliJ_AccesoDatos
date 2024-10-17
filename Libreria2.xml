@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<libreria>
+    <listaLibro>
+        <autor>Alicia Ranca</autor>
+        <nombre>Entornos de Desarrollo</nombre>
+        <editorial>Marceta</editorial>
+        <isbn>978-84-1545-297-3</isbn>
+    </listaLibro>
+    <listaLibro>
+        <autor>Maria Jesús Ravce</autor>
+        <nombre>Acceso a Datos</nombre>
+        <editorial>Santillana</editorial>
+        <isbn>978-84-1565-228-7</isbn>
+    </listaLibro>
+    <ListaLibro>
+        <Libro>
+            <autor>Alicia Ranca</autor>
+            <nombre>Entornos de Desarrollo</nombre>
+            <editorial>Marceta</editorial>
+            <isbn>978-84-1545-297-3</isbn>
+        </Libro>
+        <Libro>
+            <autor>Maria Jesús Ravce</autor>
+            <nombre>Acceso a Datos</nombre>
+            <editorial>Santillana</editorial>
+            <isbn>978-84-1565-228-7</isbn>
+        </Libro>
+    </ListaLibro>
+    <lugar>Talavera</lugar>
+    <nombre>Prueba de librería JAXB</nombre>
+</libreria>
