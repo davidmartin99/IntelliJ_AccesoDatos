@@ -5,7 +5,7 @@ public class LeerFicheroTexto {
 	public static void main(String[] args) throws IOException {
 		//Declarar el fichero
 		File fichero =
-				new File("C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Tema1\\LeerFicheroTexto.txt");
+				new File("src\\Tema1\\LeerFicheroTexto.txt");
 		
 		//Crear el flujo de entrada hacie el fichero
 		FileReader fic = new FileReader(fichero);
