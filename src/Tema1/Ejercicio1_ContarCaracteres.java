@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Ejercicio1_ContarCaracteres {
 
     public static void main(String[] args) {
-        String archivo = "C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Tema1/Texto_Ejercicio1.txt"; // Reemplazar por la ruta del fichero
+        String archivo = "src\\Tema1/Texto_Ejercicio1.txt"; // Reemplazar por la ruta del fichero
         int maxCaracteres = 1000;
         int maxPalabras = 150;
 

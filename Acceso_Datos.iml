@@ -8,73 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Java EE 6-Java EE 6" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-1.4.20.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-benchmark-1.4.20.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-hibernate-1.4.20.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-jmh-1.4.20.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-jmh-1.4.20.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-hibernate" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream-hibernate" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Downloads/xstream-distribution-1.4.20-bin/xstream-1.4.20/lib/xstream" recursive="false" />
-      </library>
-    </orderEntry>
     <orderEntry type="library" exported="" name="jakarta.json.bind.api" level="project" />
     <orderEntry type="library" exported="" name="jakarta.xml.bind.api" level="project" />
     <orderEntry type="module-library" exported="">
@@ -97,5 +30,98 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="jaxb-runtime-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="jaxb-impl-2.2.11" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/Descargas/jaxb-api-2.3.1.jar!/" />
+          <root url="jar://E:/Descargas/jaxb-core-2.3.0.jar!/" />
+          <root url="jar://E:/Descargas/jaxb-core-2.2.11.jar!/" />
+          <root url="jar://E:/Descargas/jaxb-runtime-2.3.1.jar!/" />
+          <root url="jar://E:/Descargas/jaxb-xjc-2.2.11.jar!/" />
+          <root url="jar://E:/Descargas/jaxb-impl-2.2.11.jar!/" />
+          <root url="jar://E:/Descargas/jakarta.activation-api-2.1.0.jar!/" />
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://E:/Descargas/jaxb-xjc-2.2.11.jar!/" />
+          <root url="file://$MODULE_DIR$/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jakarta.activation-api-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-api-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-core-2.2.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-core-2.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-impl-2.2.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-runtime-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-xjc-2.2.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/jaxb-xjc-2.2.11.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Escritorio/.jar/xstream-1.4.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -3,7 +3,7 @@ import java.io.*;
 
 public class VerDir {
 	public static void main(String[] args) {
-		String dir = "C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Tema1"; //direcctorio actual 
+		String dir = "src\\Tema1"; //direcctorio actual
 		File f = new File(dir);
 		String[] archivos = f.list();
 		System.out.printf("Ficheros en el directorio actual: %d %n", archivos.length);
