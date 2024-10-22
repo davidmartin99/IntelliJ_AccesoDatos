@@ -15,7 +15,7 @@ public class BuscarCancion {
         RandomAccessFile file = null;
 
         try {
-            File fichero = new File("C:\\Users\\aludam2\\IdeaProjects\\Acceso_Datos\\src\\Ficheros_Aleatorios\\cancionesAleatorio.dat");
+            File fichero = new File("src\\Ficheros_Aleatorios\\cancionesAleatorio.dat");
             file = new RandomAccessFile(fichero, "r");
 
             // Crear un objeto Scanner para leer la entrada del usuario
