@@ -5,8 +5,16 @@
       <root url="jar://$USER_HOME$/Downloads/jakarta.activation-api-2.1.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jaxb-core-2.3.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-1.4.20.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream-benchmark/src/java" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream-benchmark/src/test" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream-hibernate/src/java" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream-hibernate/src/test" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream/src/java" />
+      <root url="jar://$USER_HOME$/Downloads/xstream-XSTREAM_1_4_8.zip!/xstream-XSTREAM_1_4_8/xstream/src/test" />
+    </SOURCES>
   </library>
 </component>
