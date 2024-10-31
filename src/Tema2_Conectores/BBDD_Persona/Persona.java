@@ -1,4 +1,4 @@
-package Tema2_Conectores;
+package Tema2_Conectores.BBDD_Persona;
 
 public class Persona {
     private String nombre;
