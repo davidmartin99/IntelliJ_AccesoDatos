@@ -39,6 +39,7 @@ public class MainPrueba1 {
 
             // Mueve el puntero al último registro y lo muestra
             if (resul.last()) {
+                System.out.println(" ");
                 System.out.printf("   -Último registro -> ID: %d, Nombre: %s, Dirección: %s, Localidad: %s%n",
                         resul.getInt("Codalumno"),
                         resul.getString("Nombre"),
