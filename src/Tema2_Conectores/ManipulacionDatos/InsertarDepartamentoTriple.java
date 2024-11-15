@@ -30,7 +30,7 @@ public class InsertarDepartamentoTriple {
             // Insertar datos (tercer departamento)
             sentencia.setInt(1, 30);
             sentencia.setString(2, "Recursos Humanos");
-            sentencia.setString(3, "Valencia");
+            sentencia.setString(3, "Alcorcon");
             sentencia.executeUpdate(); // Ejecuta la inserción para el tercer departamento
 
             // Mostrar mensaje de éxito
