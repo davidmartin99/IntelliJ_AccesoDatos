@@ -1,12 +1,12 @@
-package Tema2_Conectores.DescripcionDatos;
+package Tema2_Conectores.ManipulacionDatos;
 
 import java.sql.*;
 
 /**
- * pag 42. IMPORTANTE
+ * en DBeaver
+ * Ejemplo de actualización de la tabla 'doctor' para convertir la especialidad a mayúsculas
  */
-
-public class EjemploExecute {
+public class EjemploExecute2 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
         // Cargar el controlador JDBC para MySQL
@@ -16,7 +16,7 @@ public class EjemploExecute {
         Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/hospital", "root", "1234");
 
         // Definir la consulta SQL que se va a ejecutar
-        String sql = "SELECT * FROM doctor";  // Seleccionamos todas las columnas de la tabla doctor
+        String sql = "UPDATE doctor SET especialidad = UPPER(especialidad)";  // Convertir especialidad a mayúsculas
 
         // Crear un objeto Statement para ejecutar la consulta
         Statement sentencia = conexion.createStatement();
@@ -30,13 +30,7 @@ public class EjemploExecute {
 
             // Recorremos los resultados y mostramos las columnas
             while (rs.next()) {
-                // Mostramos todas las columnas de cada fila de la tabla 'doctor'
-                System.out.printf("Hospital Cod: %d, Doctor No: %d, Apellido: %s, Especialidad: %s, Salario: %d%n",
-                        rs.getInt("HOSPITAL_COD"),
-                        rs.getInt("DOCTOR_NO"),
-                        rs.getString("APELLIDO"),
-                        rs.getString("ESPECIALIDAD"),
-                        rs.getInt("SALARIO"));
+                System.out.printf("%d, %s, %s%n", rs.getInt(1), rs.getString(2), rs.getString(3));
             }
             rs.close();  // Cerramos el ResultSet cuando ya no lo necesitamos
         } else {
