@@ -1,4 +1,4 @@
-package Tema2_Conectores;
+package Tema2_Conectores.BBDD_Persona;
 
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
