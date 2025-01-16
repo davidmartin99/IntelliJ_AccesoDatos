@@ -254,5 +254,34 @@
         <jarDirectory url="file://$USER_HOME$/Desktop/AccesoDatosDAM2/.jars/mysql-connector-j-9.1.0" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/neodatis-odb-1.9.30.689/neodatis-odb-1.9.30-689/lib/looks-2.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Downloads/neodatis-odb-1.9.30.689/neodatis-odb-1.9.30-689/doc/javadoc" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/neodatis-odb-1.9.30.689/neodatis-odb-1.9.30-689/doc/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/neodatis-odb-1.9.30.689/neodatis-odb-1.9.30-689/neodatis-odb-1.9.30.689.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

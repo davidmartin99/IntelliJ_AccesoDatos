@@ -25,7 +25,7 @@ public class EjemploExecute2 {
         boolean valor = sentencia.execute(sql);
 
         if (valor) {
-            // Si la consulta es SELECT, obtenemos el ResultSet con los resultados
+            // Si la cnsulta es SELECT, obtenemos el ResultSet con los resultados
             ResultSet rs = sentencia.getResultSet();
 
             // Recorremos los resultados y mostramos las columnas
