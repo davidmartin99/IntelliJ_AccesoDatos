@@ -10,17 +10,20 @@ class Jugadores {
     private String deporte;
     private String ciudad;
     private int edad;
+    private Paises pais;
+
 
     // Constructor por defecto
     public Jugadores() {
     }
 
     // Constructor con parámetros
-    public Jugadores(String nombre, String deporte, String ciudad, int edad) {
+    public Jugadores(String nombre, String deporte, String ciudad, int edad, Paises pais) {
         this.nombre = nombre;
         this.deporte = deporte;
         this.ciudad = ciudad;
         this.edad = edad;
+        this.pais = pais;
     }
 
     // Métodos getter y setter
@@ -55,6 +58,15 @@ class Jugadores {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+
+    public Paises getPais() {
+        return pais;
+    }
+    public void setPais(Paises pais) {
+        this.pais = pais;
+    }
+
 }
 
 
