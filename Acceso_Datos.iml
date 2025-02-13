@@ -283,5 +283,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="mongodb.driver.sync" level="project" />
+    <orderEntry type="library" name="mongodb.driver.sync1" level="project" />
   </component>
 </module>

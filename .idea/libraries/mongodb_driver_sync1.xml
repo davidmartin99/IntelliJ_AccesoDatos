@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="mongodb.driver.sync1" type="repository">
+    <properties maven-id="org.mongodb:mongodb-driver-sync:4.10.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-sync/4.10.0/mongodb-driver-sync-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/4.10.0/bson-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/4.10.0/mongodb-driver-core-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/bson-record-codec/4.10.0/bson-record-codec-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/bson-kotlin/4.10.0/bson-kotlin-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.10/kotlin-stdlib-jdk8-1.8.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.8.10/kotlin-stdlib-1.8.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.10/kotlin-stdlib-common-1.8.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.10/kotlin-stdlib-jdk7-1.8.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-reflect/1.8.10/kotlin-reflect-1.8.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/bson-kotlinx/4.10.0/bson-kotlinx-4.10.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-serialization-core/1.5.0/kotlinx-serialization-core-1.5.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.5.0/kotlinx-serialization-core-jvm-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
