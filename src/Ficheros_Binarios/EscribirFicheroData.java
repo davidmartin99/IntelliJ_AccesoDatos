@@ -10,7 +10,7 @@ import java.io.IOException;
 public class EscribirFicheroData {
 	public static void main(String[] args) throws IOException {
 		File fichero = new
-				File("C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Ficheros_Binarios\\DataFichero.dat"); //Declarar el fichero
+				File("src\\Ficheros_Binarios\\DataFichero.dat"); //Declarar el fichero
 		// Crea el flujo de salida hacia el fichero
 		FileOutputStream fileout = new FileOutputStream(fichero);
 		DataOutputStream dataOS = new DataOutputStream(fileout);

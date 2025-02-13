@@ -16,6 +16,12 @@ public class DatosPrimitivos {
 		f2.createNewFile();
 
 		// Flujo de salida
+		/**
+		 * FileOutputStream: Se encarga de manejar el archivo directamente y de escribir bytes en él.
+		 * DataOutputStream: Proporciona una manera conveniente de escribir tipos de datos primitivos
+		 * (como int, char, boolean, etc.) en el archivo,
+		 * haciendo que el proceso de escritura sea más fácil y estructurado.
+		 */
 		FileOutputStream fileout = new FileOutputStream(f2);
 		DataOutputStream dataOS = new DataOutputStream(fileout);
 

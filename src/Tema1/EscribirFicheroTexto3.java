@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class EscribirFicheroTexto3 {
 	public static void main(String[] args) throws IOException {
-        File fichero = new File("C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Tema1\\EscribirFicheroTexto.txt");
+        File fichero = new File("src\\Tema1\\EscribirFicheroTexto.txt");
 
         // Paso 1: Añadir "Valencia" al final del fichero sin borrar el contenido previo
         FileWriter fic = new FileWriter(fichero, true); 

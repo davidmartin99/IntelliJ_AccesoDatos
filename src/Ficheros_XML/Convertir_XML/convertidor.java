@@ -25,7 +25,8 @@ public class convertidor {
         Result result = new StreamResult(os); // Donde se escribirá el resultado (el archivo HTML)
 
         try {
-            // Crear un transformador utilizando la hoja de estilo XSL
+            // Crea un objeto Transformer utilizando la hoja de estilo XSL.
+            // Este objeto es responsable de aplicar la transformación.
             Transformer transformer = TransformerFactory.newInstance().newTransformer(estilos);
 
             // Aplicar la transformación de los datos XML usando la hoja de estilo XSL

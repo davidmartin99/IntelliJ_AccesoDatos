@@ -1,5 +1,8 @@
 import java.sql.*;
 
+/**
+ * PrepareStatement
+ */
 public class InsertarDepartamentoTriple {
     public static void main(String[] args) {
         // Datos de conexión a la base de datos

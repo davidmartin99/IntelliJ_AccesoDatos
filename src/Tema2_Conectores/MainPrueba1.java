@@ -2,6 +2,10 @@ package Tema2_Conectores;
 
 import java.sql.*;
 
+/**
+ * Statement
+ * Result Set pag 28
+ */
 public class MainPrueba1 {
 
     public static void main(String[] args) {

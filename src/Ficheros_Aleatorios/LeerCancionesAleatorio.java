@@ -9,7 +9,7 @@ import java.io.RandomAccessFile;
 public class LeerCancionesAleatorio {
 
     public static void main(String[] args) {
-        String ficheroAleatorio = "C:\\Users\\aludam2\\IdeaProjects\\Acceso_Datos\\src\\Ficheros_Aleatorios\\cancionesAleatorio.dat";
+        String ficheroAleatorio = "src\\Ficheros_Aleatorios\\cancionesAleatorio.dat";
 
         try {
             leerFicheroAleatorio(ficheroAleatorio);

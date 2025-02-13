@@ -7,7 +7,7 @@ import java.io.IOException;
 public class EscribirFicheroTexto2 {
 	public static void main(String[] args) throws IOException {
 		File fichero = new
-				File("C:\\Users\\aludam2\\eclipse-workspace\\Acceso_Datos\\src\\Tema1\\EscribirFicheroTexto.txt");
+				File("src\\Tema1\\EscribirFicheroTexto.txt");
 		
 		//Crear el flujo de salida
 		FileWriter fic = new FileWriter(fichero);
