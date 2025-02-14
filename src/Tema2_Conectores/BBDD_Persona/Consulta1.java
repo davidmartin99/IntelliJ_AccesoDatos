@@ -1,5 +1,5 @@
 package Tema2_Conectores.BBDD_Persona;
-
+/*
 import com.db4o.Db4o;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
@@ -20,3 +20,5 @@ public class Consulta1 {
         }
     }
 }
+
+ */

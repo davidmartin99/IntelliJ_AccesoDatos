@@ -10,7 +10,7 @@
     <orderEntry type="library" exported="" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" exported="" name="jakarta.json.bind.api" level="project" />
     <orderEntry type="library" exported="" name="jakarta.xml.bind.api" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/jaxb-api-2.3.1.jar!/" />
@@ -19,7 +19,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/jaxb-core-2.3.0.jar!/" />
@@ -198,5 +198,17 @@
     </orderEntry>
     <orderEntry type="library" name="mongodb.driver.sync" level="project" />
     <orderEntry type="library" name="mongodb.driver.sync1" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/out/Acceso_Datos.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/out/Acceso_Datos.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="LibreriaJava" level="project" />
   </component>
 </module>

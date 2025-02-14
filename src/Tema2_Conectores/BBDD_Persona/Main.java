@@ -1,12 +1,12 @@
 package Tema2_Conectores.BBDD_Persona;
-
+/*
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 
 public class Main {
     static String BDPer = "DBPersonas.yap"; // Nombre de la base de datos
 
-    public static void main(String[] args) {
+    public static <ObjectContainer> void main(String[] args) {
         // Abrir la base de datos
         ObjectContainer db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), BDPer);
 
@@ -34,3 +34,4 @@ public class Main {
         db.close();
     }
 }
+ */

@@ -1,5 +1,5 @@
 package Tema2_Conectores.BBDD_Persona;
-
+/*
 public class Persona {
     private String nombre;
     private String ciudad;
@@ -36,4 +36,6 @@ public class Persona {
         this.ciudad = ciudad;
     }
 }
+
+ */
 
